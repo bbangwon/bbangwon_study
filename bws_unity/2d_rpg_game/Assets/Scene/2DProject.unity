@@ -702,6 +702,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1976126013}
+  - 95: {fileID: 1976126014}
   m_Layer: 0
   m_Name: BG_Depth0
   m_TagString: Untagged
@@ -723,6 +724,23 @@ Transform:
   - {fileID: 1360329859}
   m_Father: {fileID: 281720993}
   m_RootOrder: 0
+--- !u!95 &1976126014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976126012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1ef17cd32110f74dbae46c4f4482e68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2097131407
 GameObject:
   m_ObjectHideFlags: 0
