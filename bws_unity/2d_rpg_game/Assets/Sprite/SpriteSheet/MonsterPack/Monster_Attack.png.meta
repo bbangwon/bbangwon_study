@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 3588bd3e4cbd33f45aa5a77f06ba4213
-timeCreated: 1454428168
+timeCreated: 1455186826
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Monster_Attack_0
+    21300002: Monster_Attack_1
+    21300004: Monster_Attack_2
+    21300006: Monster_Attack_3
+    21300008: Monster_Attack_4
+    21300010: Monster_Attack_5
+    21300012: Monster_Attack_6
+    21300014: Monster_Attack_7
+    21300016: Monster_Attack_8
+    21300018: Monster_Attack_9
+    21300020: Monster_Attack_10
+    21300022: Monster_Attack_11
+    21300024: Monster_Attack_12
+    21300026: Monster_Attack_13
+    21300028: Monster_Attack_14
+    21300030: Monster_Attack_15
+    21300032: Monster_Attack_16
+    21300034: Monster_Attack_17
+    21300036: Monster_Attack_18
+    21300038: Monster_Attack_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +46,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +58,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +69,681 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Monster_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77, y: 63}
+        - {x: 86, y: 107}
+        - {x: 86, y: 161}
+        - {x: 70, y: 169}
+        - {x: 46, y: 159}
+        - {x: 47, y: 140}
+        - {x: 38, y: 165}
+        - {x: 14, y: 160}
+        - {x: 5, y: 153}
+        - {x: 2, y: 138}
+        - {x: 7, y: 130}
+        - {x: -2, y: 138}
+        - {x: -17, y: 173}
+        - {x: -32, y: 179}
+        - {x: -58, y: 179}
+        - {x: -86, y: 173}
+        - {x: -86, y: -138}
+        - {x: -50, y: -144}
+        - {x: -4, y: -144}
+        - {x: 27, y: -117}
+        - {x: 42, y: -70}
+        - {x: 39, y: -50}
+    - name: Monster_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1144
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85, y: 178}
+        - {x: -85, y: -74}
+        - {x: 24, y: -161}
+        - {x: 86, y: -161}
+        - {x: 86, y: 178}
+    - name: Monster_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1144
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 160}
+        - {x: 45, y: 144}
+        - {x: 33, y: 155}
+        - {x: 17, y: 159}
+        - {x: 2, y: 148}
+        - {x: 3, y: 130}
+        - {x: -5, y: 148}
+        - {x: -20, y: 173}
+        - {x: -32, y: 177}
+        - {x: -45, y: 177}
+        - {x: -53, y: 172}
+        - {x: -54, y: 149}
+        - {x: -40, y: 139}
+        - {x: -51, y: 147}
+        - {x: -79, y: 152}
+        - {x: -85, y: 148}
+        - {x: -85, y: 9}
+        - {x: -83, y: -3}
+        - {x: 65, y: -154}
+        - {x: 106, y: -154}
+        - {x: 106, y: 172}
+        - {x: 70, y: 167}
+    - name: Monster_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1144
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 99, y: -84}
+        - {x: 93, y: 144}
+        - {x: 72, y: 166}
+        - {x: 55, y: 161}
+        - {x: 48, y: 152}
+        - {x: 48, y: 136}
+        - {x: 35, y: 154}
+        - {x: 6, y: 157}
+        - {x: 3, y: 143}
+        - {x: 3, y: 130}
+        - {x: 18, y: 117}
+        - {x: 7, y: 104}
+        - {x: 1, y: 141}
+        - {x: -16, y: 173}
+        - {x: -25, y: 175}
+        - {x: -52, y: 175}
+        - {x: -69, y: 167}
+        - {x: -84, y: 143}
+        - {x: -84, y: 124}
+        - {x: -74, y: 110}
+        - {x: -65, y: 37}
+        - {x: -54, y: -27}
+        - {x: 92, y: -129}
+        - {x: 125, y: -129}
+        - {x: 127, y: -117}
+        - {x: 127, y: -90}
+        - {x: 116, y: -85}
+    - name: Monster_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1144
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85, y: 153}
+        - {x: 63, y: 165}
+        - {x: 48, y: 153}
+        - {x: 46, y: 140}
+        - {x: 63, y: 119}
+        - {x: 56, y: 112}
+        - {x: 31, y: 163}
+        - {x: 0, y: 149}
+        - {x: 2, y: 140}
+        - {x: 7, y: 123}
+        - {x: -11, y: 159}
+        - {x: -24, y: 173}
+        - {x: -83, y: 173}
+        - {x: -83, y: -47}
+        - {x: 97, y: -102}
+        - {x: 137, y: -102}
+        - {x: 141, y: -101}
+        - {x: 145, y: -93}
+        - {x: 145, y: -80}
+        - {x: 134, y: -55}
+    - name: Monster_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98, y: 171}
+        - {x: 73, y: 171}
+        - {x: 53, y: 161}
+        - {x: 44, y: 138}
+        - {x: 58, y: 125}
+        - {x: 33, y: 45}
+        - {x: 32, y: 43}
+        - {x: 33, y: 43}
+        - {x: 32, y: 45}
+        - {x: 44, y: 109}
+        - {x: 47, y: 133}
+        - {x: 25, y: 154}
+        - {x: 17, y: 152}
+        - {x: 2, y: 139}
+        - {x: 4, y: 128}
+        - {x: 14, y: 115}
+        - {x: 11, y: 111}
+        - {x: -9, y: 158}
+        - {x: -18, y: 170}
+        - {x: -21, y: 171}
+        - {x: -44, y: 171}
+        - {x: -53, y: 151}
+        - {x: -45, y: 140}
+        - {x: -82, y: 151}
+        - {x: -82, y: -72}
+        - {x: -18, y: -82}
+        - {x: 150, y: -82}
+        - {x: 150, y: -43}
+        - {x: 118, y: -23}
+    - name: Monster_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 774
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 169}
+        - {x: 5, y: 140}
+        - {x: 4, y: 135}
+        - {x: 6, y: 122}
+        - {x: 17, y: 113}
+        - {x: 16, y: 87}
+        - {x: 2, y: 133}
+        - {x: -8, y: 156}
+        - {x: -19, y: 169}
+        - {x: -38, y: 169}
+        - {x: -52, y: 161}
+        - {x: -50, y: 143}
+        - {x: -29, y: 131}
+        - {x: -61, y: 149}
+        - {x: -81, y: 154}
+        - {x: -81, y: -8}
+        - {x: -4, y: -79}
+        - {x: 113, y: -79}
+        - {x: 138, y: -74}
+        - {x: 142, y: -63}
+        - {x: 142, y: 78}
+        - {x: 107, y: 169}
+    - name: Monster_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 774
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 146}
+        - {x: 46, y: 134}
+        - {x: 58, y: 118}
+        - {x: 49, y: 129}
+        - {x: 30, y: 146}
+        - {x: 12, y: 146}
+        - {x: 5, y: 132}
+        - {x: 6, y: 125}
+        - {x: 10, y: 116}
+        - {x: 16, y: 110}
+        - {x: 8, y: 115}
+        - {x: 3, y: 132}
+        - {x: -11, y: 167}
+        - {x: -67, y: 167}
+        - {x: -79, y: 161}
+        - {x: -79, y: 81}
+        - {x: -53, y: -28}
+        - {x: 30, y: -77}
+        - {x: 81, y: -77}
+        - {x: 133, y: -52}
+        - {x: 133, y: 9}
+        - {x: 86, y: 167}
+    - name: Monster_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 774
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104, y: 15}
+        - {x: 74, y: -8}
+        - {x: 99, y: 135}
+        - {x: 62, y: 162}
+        - {x: 45, y: 142}
+        - {x: 49, y: 125}
+        - {x: 27, y: 146}
+        - {x: 16, y: 141}
+        - {x: 9, y: 135}
+        - {x: 7, y: 130}
+        - {x: 7, y: 121}
+        - {x: 10, y: 117}
+        - {x: 10, y: 115}
+        - {x: 15, y: 110}
+        - {x: 20, y: 106}
+        - {x: 10, y: 112}
+        - {x: 8, y: 116}
+        - {x: 6, y: 130}
+        - {x: -6, y: 150}
+        - {x: -14, y: 162}
+        - {x: -22, y: 165}
+        - {x: -35, y: 165}
+        - {x: -44, y: 160}
+        - {x: -46, y: 143}
+        - {x: -44, y: 134}
+        - {x: -56, y: 145}
+        - {x: -78, y: 136}
+        - {x: -78, y: 85}
+        - {x: -63, y: -13}
+        - {x: -17, y: -75}
+        - {x: 98, y: -75}
+        - {x: 125, y: -62}
+        - {x: 125, y: 3}
+        - {x: 117, y: 8}
+    - name: Monster_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 774
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: -2}
+        - {x: 112, y: 163}
+        - {x: 85, y: 163}
+        - {x: 63, y: 153}
+        - {x: 48, y: 141}
+        - {x: 50, y: 123}
+        - {x: 30, y: 145}
+        - {x: -14, y: 162}
+        - {x: -18, y: 163}
+        - {x: -36, y: 163}
+        - {x: -43, y: 155}
+        - {x: -42, y: 138}
+        - {x: -32, y: 128}
+        - {x: -54, y: 142}
+        - {x: -71, y: 163}
+        - {x: -76, y: 163}
+        - {x: -76, y: -23}
+        - {x: -8, y: -74}
+        - {x: 81, y: -74}
+        - {x: 121, y: -54}
+        - {x: 121, y: 14}
+        - {x: 90, y: 20}
+    - name: Monster_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: 19}
+        - {x: 69, y: -10}
+        - {x: 70, y: -18}
+        - {x: 49, y: -55}
+        - {x: 80, y: 43}
+        - {x: 102, y: 135}
+        - {x: 62, y: 157}
+        - {x: 37, y: 147}
+        - {x: -8, y: 160}
+        - {x: -15, y: 162}
+        - {x: -35, y: 162}
+        - {x: -41, y: 155}
+        - {x: -43, y: 136}
+        - {x: -30, y: 126}
+        - {x: -53, y: 140}
+        - {x: -74, y: 146}
+        - {x: -74, y: -49}
+        - {x: -66, y: -73}
+        - {x: 118, y: -73}
+        - {x: 118, y: 0}
+        - {x: 106, y: 15}
+    - name: Monster_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 404
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 141}
+        - {x: 48, y: 129}
+        - {x: 65, y: 107}
+        - {x: 51, y: 125}
+        - {x: 32, y: 143}
+        - {x: -1, y: 166}
+        - {x: -29, y: 166}
+        - {x: -44, y: 160}
+        - {x: -39, y: 142}
+        - {x: -34, y: 133}
+        - {x: -42, y: 140}
+        - {x: -63, y: 147}
+        - {x: -73, y: 141}
+        - {x: -73, y: -58}
+        - {x: 11, y: -97}
+        - {x: 134, y: -97}
+        - {x: 134, y: 59}
+        - {x: 124, y: 152}
+        - {x: 74, y: 154}
+        - {x: 59, y: 148}
+    - name: Monster_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 404
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: 146}
+        - {x: 52, y: 127}
+        - {x: 50, y: 157}
+        - {x: 3, y: 172}
+        - {x: -44, y: 172}
+        - {x: -40, y: 154}
+        - {x: -26, y: 135}
+        - {x: -7, y: 119}
+        - {x: -50, y: 152}
+        - {x: -62, y: 151}
+        - {x: -72, y: 148}
+        - {x: -72, y: 38}
+        - {x: -31, y: -160}
+        - {x: -8, y: -184}
+        - {x: 11, y: -184}
+        - {x: 34, y: -165}
+        - {x: 93, y: 38}
+        - {x: 93, y: 155}
+        - {x: 73, y: 160}
+    - name: Monster_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 404
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 148}
+        - {x: 53, y: 136}
+        - {x: 56, y: 131}
+        - {x: 65, y: 122}
+        - {x: 56, y: 128}
+        - {x: 52, y: 140}
+        - {x: 31, y: 155}
+        - {x: 14, y: 144}
+        - {x: 14, y: 133}
+        - {x: 15, y: 132}
+        - {x: 15, y: 129}
+        - {x: 17, y: 124}
+        - {x: 19, y: 122}
+        - {x: 26, y: 116}
+        - {x: 16, y: 124}
+        - {x: 15, y: 130}
+        - {x: 14, y: 131}
+        - {x: 14, y: 141}
+        - {x: -6, y: 178}
+        - {x: -28, y: 178}
+        - {x: -38, y: 175}
+        - {x: -40, y: 162}
+        - {x: -31, y: 143}
+        - {x: -21, y: 141}
+        - {x: -22, y: 129}
+        - {x: -63, y: 178}
+        - {x: -77, y: 178}
+        - {x: -145, y: 37}
+        - {x: -145, y: -85}
+        - {x: -45, y: -85}
+        - {x: 52, y: -57}
+        - {x: 93, y: 64}
+        - {x: 93, y: 155}
+        - {x: 76, y: 161}
+    - name: Monster_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 404
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 178}
+        - {x: 59, y: 160}
+        - {x: 48, y: 147}
+        - {x: 50, y: 137}
+        - {x: 60, y: 127}
+        - {x: 55, y: 115}
+        - {x: 48, y: 145}
+        - {x: 39, y: 152}
+        - {x: 26, y: 158}
+        - {x: 9, y: 146}
+        - {x: 13, y: 131}
+        - {x: 16, y: 126}
+        - {x: 22, y: 120}
+        - {x: 17, y: 119}
+        - {x: 13, y: 130}
+        - {x: 10, y: 143}
+        - {x: -2, y: 167}
+        - {x: -15, y: 180}
+        - {x: -37, y: 180}
+        - {x: -46, y: 161}
+        - {x: -31, y: 144}
+        - {x: -25, y: 145}
+        - {x: -5, y: 114}
+        - {x: -53, y: 161}
+        - {x: -81, y: 150}
+        - {x: -135, y: 83}
+        - {x: -135, y: -4}
+        - {x: -111, y: -26}
+        - {x: -62, y: -42}
+        - {x: 5, y: -42}
+        - {x: 29, y: -38}
+        - {x: 90, y: 63}
+        - {x: 90, y: 154}
+    - name: Monster_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: 169}
+        - {x: 49, y: 156}
+        - {x: 50, y: 136}
+        - {x: 49, y: 140}
+        - {x: 32, y: 162}
+        - {x: 6, y: 150}
+        - {x: 9, y: 135}
+        - {x: 21, y: 121}
+        - {x: 10, y: 130}
+        - {x: 6, y: 143}
+        - {x: 5, y: 152}
+        - {x: -14, y: 181}
+        - {x: -34, y: 181}
+        - {x: -47, y: 176}
+        - {x: -45, y: 156}
+        - {x: -33, y: 145}
+        - {x: -64, y: 160}
+        - {x: -88, y: 142}
+        - {x: -124, y: 31}
+        - {x: -124, y: -57}
+        - {x: -119, y: -59}
+        - {x: 0, y: -59}
+        - {x: 63, y: -32}
+        - {x: 89, y: 68}
+        - {x: 89, y: 163}
+    - name: Monster_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 34
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 152}
+        - {x: 51, y: 138}
+        - {x: 49, y: 140}
+        - {x: 30, y: 163}
+        - {x: 5, y: 151}
+        - {x: 7, y: 133}
+        - {x: 3, y: 145}
+        - {x: -16, y: 179}
+        - {x: -20, y: 180}
+        - {x: -42, y: 180}
+        - {x: -50, y: 160}
+        - {x: -70, y: 180}
+        - {x: -109, y: 96}
+        - {x: -109, y: -83}
+        - {x: -34, y: -83}
+        - {x: 2, y: -76}
+        - {x: 88, y: 10}
+        - {x: 88, y: 180}
+        - {x: 79, y: 180}
+        - {x: 57, y: 166}
+    - name: Monster_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 34
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 87, y: 110}
+        - {x: 87, y: 154}
+        - {x: 64, y: 173}
+        - {x: 50, y: 156}
+        - {x: 47, y: 145}
+        - {x: 63, y: 116}
+        - {x: 47, y: 140}
+        - {x: 26, y: 162}
+        - {x: 15, y: 157}
+        - {x: 7, y: 151}
+        - {x: 3, y: 136}
+        - {x: 16, y: 123}
+        - {x: 8, y: 119}
+        - {x: -8, y: 166}
+        - {x: -24, y: 180}
+        - {x: -84, y: 180}
+        - {x: -84, y: -107}
+        - {x: -51, y: -107}
+        - {x: -44, y: -106}
+        - {x: -19, y: -100}
+        - {x: 21, y: -45}
+        - {x: 76, y: 65}
+    - name: Monster_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 34
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: 172}
+        - {x: 19, y: 179}
+        - {x: -52, y: 179}
+        - {x: -58, y: 158}
+        - {x: -39, y: 141}
+        - {x: -68, y: 158}
+        - {x: -85, y: 153}
+        - {x: -85, y: -107}
+        - {x: -81, y: -128}
+        - {x: -20, y: -128}
+        - {x: 27, y: -109}
+        - {x: 86, y: 87}
+        - {x: 86, y: 162}
+    - name: Monster_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 34
+        width: 300
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 161}
+        - {x: 70, y: 169}
+        - {x: 46, y: 159}
+        - {x: 47, y: 140}
+        - {x: 38, y: 165}
+        - {x: 14, y: 160}
+        - {x: 5, y: 153}
+        - {x: 2, y: 138}
+        - {x: 7, y: 130}
+        - {x: -2, y: 138}
+        - {x: -17, y: 173}
+        - {x: -32, y: 179}
+        - {x: -54, y: 179}
+        - {x: -70, y: 175}
+        - {x: -86, y: 162}
+        - {x: -86, y: 20}
+        - {x: -79, y: -19}
+        - {x: -11, y: -138}
+        - {x: 7, y: -138}
+        - {x: 42, y: -95}
+        - {x: 77, y: 63}
+        - {x: 86, y: 107}
     outline: []
   spritePackingTag: 
   userData: 

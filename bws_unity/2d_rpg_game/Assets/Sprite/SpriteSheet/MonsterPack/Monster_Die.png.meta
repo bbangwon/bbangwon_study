@@ -1,9 +1,25 @@
 fileFormatVersion: 2
 guid: 14b6b0d466fd20d4d92a9c46a86baef2
-timeCreated: 1454428163
+timeCreated: 1455186856
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Monster_Die_0
+    21300002: Monster_Die_1
+    21300004: Monster_Die_2
+    21300006: Monster_Die_3
+    21300008: Monster_Die_4
+    21300010: Monster_Die_5
+    21300012: Monster_Die_6
+    21300014: Monster_Die_7
+    21300016: Monster_Die_8
+    21300018: Monster_Die_9
+    21300020: Monster_Die_10
+    21300022: Monster_Die_11
+    21300024: Monster_Die_12
+    21300026: Monster_Die_13
+    21300028: Monster_Die_14
+    21300030: Monster_Die_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +42,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +54,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +65,452 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Monster_Die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54.5, y: 166}
+        - {x: 53.5, y: 148}
+        - {x: 39.5, y: 165}
+        - {x: 20.5, y: 168}
+        - {x: 11.5, y: 161}
+        - {x: 8.5, y: 146}
+        - {x: 13.5, y: 138}
+        - {x: 13.5, y: 132}
+        - {x: -13.5, y: 185}
+        - {x: -18.5, y: 187}
+        - {x: -51.5, y: 187}
+        - {x: -79.5, y: 177}
+        - {x: -79.5, y: -106}
+        - {x: -77.5, y: -114}
+        - {x: -54.5, y: -136}
+        - {x: 9.5, y: -136}
+        - {x: 47.5, y: -120}
+        - {x: 92.5, y: 120}
+        - {x: 92.5, y: 169}
+        - {x: 69.5, y: 180}
+    - name: Monster_Die_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1144
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77.5, y: 136}
+        - {x: 70.5, y: 121}
+        - {x: 81.5, y: 105}
+        - {x: 72.5, y: 114}
+        - {x: 66.5, y: 133}
+        - {x: 56.5, y: 141}
+        - {x: 38.5, y: 137}
+        - {x: 32.5, y: 127}
+        - {x: 33.5, y: 115}
+        - {x: 41.5, y: 107}
+        - {x: 35.5, y: 99}
+        - {x: 25.5, y: 160}
+        - {x: 17.5, y: 171}
+        - {x: -4.5, y: 171}
+        - {x: -15.5, y: 169}
+        - {x: -14.5, y: 148}
+        - {x: -1.5, y: 134}
+        - {x: -25.5, y: 154}
+        - {x: -45.5, y: 154}
+        - {x: -51.5, y: 141}
+        - {x: -51.5, y: -148}
+        - {x: 5.5, y: -148}
+        - {x: 109.5, y: 6}
+        - {x: 109.5, y: 140}
+        - {x: 88.5, y: 143}
+    - name: Monster_Die_2
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1144
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 130.5, y: 80}
+        - {x: 77.5, y: 121}
+        - {x: 16.5, y: 121}
+        - {x: -41.5, y: 101}
+        - {x: -83.5, y: -32}
+        - {x: -83.5, y: -167}
+        - {x: -55.5, y: -167}
+        - {x: -3.5, y: -132}
+        - {x: 135.5, y: 27}
+        - {x: 135.5, y: 68}
+      - - {x: 80.5, y: -22}
+        - {x: 80.5, y: -26}
+        - {x: 82.5, y: -28}
+        - {x: 86.5, y: -28}
+        - {x: 89.5, y: -26}
+        - {x: 89.5, y: -22}
+        - {x: 86.5, y: -19}
+        - {x: 83.5, y: -19}
+    - name: Monster_Die_3
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1144
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.5, y: -51}
+        - {x: -129.5, y: -156}
+        - {x: -129.5, y: -170}
+        - {x: -53.5, y: -170}
+        - {x: 154.5, y: -68}
+        - {x: 154.5, y: 44}
+        - {x: 17.5, y: 44}
+        - {x: -61.5, y: 14}
+      - - {x: 77.5, y: -92}
+        - {x: 74.5, y: -93}
+        - {x: 74.5, y: -98}
+        - {x: 76.5, y: -101}
+        - {x: 82.5, y: -101}
+        - {x: 84.5, y: -97}
+        - {x: 84.5, y: -93}
+        - {x: 83.5, y: -92}
+    - name: Monster_Die_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 764
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.5, y: -43}
+        - {x: -153.5, y: -148}
+        - {x: -155.5, y: -150}
+        - {x: -155.5, y: -163}
+        - {x: -141.5, y: -166}
+        - {x: -28.5, y: -166}
+        - {x: 151.5, y: -126}
+        - {x: 159.5, y: -121}
+        - {x: 159.5, y: -43}
+      - - {x: 62.5, y: -153}
+        - {x: 59.5, y: -156}
+        - {x: 59.5, y: -159}
+        - {x: 62.5, y: -163}
+        - {x: 64.5, y: -163}
+        - {x: 68.5, y: -159}
+        - {x: 68.5, y: -156}
+        - {x: 66.5, y: -154}
+    - name: Monster_Die_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 764
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: -186}
+        - {x: 47.5, y: -189}
+        - {x: 55.5, y: -189}
+        - {x: 55.5, y: -187}
+        - {x: 52.5, y: -184}
+        - {x: 49.5, y: -184}
+      - - {x: -92.5, y: -67}
+        - {x: -163.5, y: -133}
+        - {x: -163.5, y: -150}
+        - {x: -136.5, y: -168}
+        - {x: 141.5, y: -168}
+        - {x: 163.5, y: -150}
+        - {x: 163.5, y: -77}
+        - {x: 157.5, y: -67}
+    - name: Monster_Die_6
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 764
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.5, y: -179}
+        - {x: 51.5, y: -184}
+        - {x: 53.5, y: -188}
+        - {x: 56.5, y: -188}
+        - {x: 60.5, y: -185}
+        - {x: 60.5, y: -182}
+        - {x: 59.5, y: -179}
+      - - {x: 88.5, y: -63}
+        - {x: -74.5, y: -63}
+        - {x: -163.5, y: -95}
+        - {x: -163.5, y: -138}
+        - {x: -124.5, y: -162}
+        - {x: 85.5, y: -162}
+        - {x: 150.5, y: -159}
+        - {x: 163.5, y: -130}
+        - {x: 163.5, y: -91}
+        - {x: 160.5, y: -89}
+    - name: Monster_Die_7
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 764
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.5, y: -173}
+        - {x: 55.5, y: -178}
+        - {x: 57.5, y: -182}
+        - {x: 61.5, y: -182}
+        - {x: 64.5, y: -180}
+        - {x: 64.5, y: -176}
+        - {x: 63.5, y: -173}
+      - - {x: -43.5, y: -58}
+        - {x: -163.5, y: -107}
+        - {x: -163.5, y: -125}
+        - {x: -95.5, y: -158}
+        - {x: 92.5, y: -158}
+        - {x: 109.5, y: -157}
+        - {x: 163.5, y: -125}
+        - {x: 163.5, y: -83}
+        - {x: 132.5, y: -58}
+    - name: Monster_Die_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.5, y: -167}
+        - {x: 59.5, y: -168}
+        - {x: 59.5, y: -172}
+        - {x: 60.5, y: -176}
+        - {x: 65.5, y: -176}
+        - {x: 68.5, y: -173}
+        - {x: 68.5, y: -170}
+        - {x: 65.5, y: -167}
+      - - {x: -95.5, y: -53}
+        - {x: -161.5, y: -70}
+        - {x: -161.5, y: -122}
+        - {x: -100.5, y: -153}
+        - {x: 103.5, y: -153}
+        - {x: 161.5, y: -119}
+        - {x: 161.5, y: -53}
+    - name: Monster_Die_9
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 384
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.5, y: -173}
+        - {x: 55.5, y: -178}
+        - {x: 57.5, y: -182}
+        - {x: 61.5, y: -182}
+        - {x: 64.5, y: -180}
+        - {x: 64.5, y: -176}
+        - {x: 63.5, y: -173}
+      - - {x: -43.5, y: -58}
+        - {x: -163.5, y: -107}
+        - {x: -163.5, y: -125}
+        - {x: -95.5, y: -158}
+        - {x: 92.5, y: -158}
+        - {x: 109.5, y: -157}
+        - {x: 163.5, y: -125}
+        - {x: 163.5, y: -83}
+        - {x: 132.5, y: -58}
+    - name: Monster_Die_10
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 384
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.5, y: -179}
+        - {x: 51.5, y: -184}
+        - {x: 53.5, y: -188}
+        - {x: 56.5, y: -188}
+        - {x: 60.5, y: -185}
+        - {x: 60.5, y: -182}
+        - {x: 59.5, y: -179}
+      - - {x: 88.5, y: -63}
+        - {x: -74.5, y: -63}
+        - {x: -163.5, y: -95}
+        - {x: -163.5, y: -138}
+        - {x: -124.5, y: -162}
+        - {x: 85.5, y: -162}
+        - {x: 150.5, y: -159}
+        - {x: 163.5, y: -130}
+        - {x: 163.5, y: -91}
+        - {x: 160.5, y: -89}
+    - name: Monster_Die_11
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 384
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: -186}
+        - {x: 47.5, y: -189}
+        - {x: 55.5, y: -189}
+        - {x: 55.5, y: -187}
+        - {x: 52.5, y: -184}
+        - {x: 49.5, y: -184}
+      - - {x: -92.5, y: -67}
+        - {x: -163.5, y: -133}
+        - {x: -163.5, y: -150}
+        - {x: -136.5, y: -168}
+        - {x: 141.5, y: -168}
+        - {x: 163.5, y: -150}
+        - {x: 163.5, y: -77}
+        - {x: 157.5, y: -67}
+    - name: Monster_Die_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.5, y: -182}
+        - {x: 51.5, y: -186}
+        - {x: 54.5, y: -189}
+        - {x: 57.5, y: -189}
+        - {x: 60.5, y: -186}
+        - {x: 58.5, y: -181}
+        - {x: 53.5, y: -180}
+      - - {x: 116.5, y: -64}
+        - {x: -35.5, y: -64}
+        - {x: -163.5, y: -117}
+        - {x: -163.5, y: -163}
+        - {x: 144.5, y: -163}
+        - {x: 163.5, y: -123}
+        - {x: 163.5, y: -98}
+        - {x: 134.5, y: -71}
+    - name: Monster_Die_13
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 4
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.5, y: -176}
+        - {x: 57.5, y: -176}
+        - {x: 55.5, y: -177}
+        - {x: 55.5, y: -182}
+        - {x: 58.5, y: -185}
+        - {x: 61.5, y: -185}
+        - {x: 64.5, y: -182}
+        - {x: 64.5, y: -178}
+      - - {x: 97.5, y: -61}
+        - {x: -66.5, y: -61}
+        - {x: -163.5, y: -102}
+        - {x: -163.5, y: -125}
+        - {x: -129.5, y: -147}
+        - {x: -78.5, y: -155}
+        - {x: -45.5, y: -150}
+        - {x: -32.5, y: -160}
+        - {x: 110.5, y: -160}
+        - {x: 163.5, y: -136}
+        - {x: 163.5, y: -71}
+        - {x: 110.5, y: -64}
+    - name: Monster_Die_14
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 4
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.5, y: -182}
+        - {x: 51.5, y: -186}
+        - {x: 54.5, y: -189}
+        - {x: 57.5, y: -189}
+        - {x: 60.5, y: -186}
+        - {x: 58.5, y: -181}
+        - {x: 53.5, y: -180}
+      - - {x: 116.5, y: -64}
+        - {x: -35.5, y: -64}
+        - {x: -163.5, y: -117}
+        - {x: -163.5, y: -163}
+        - {x: 144.5, y: -163}
+        - {x: 163.5, y: -123}
+        - {x: 163.5, y: -98}
+        - {x: 134.5, y: -71}
+    - name: Monster_Die_15
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 4
+        width: 329
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: -186}
+        - {x: 47.5, y: -189}
+        - {x: 55.5, y: -189}
+        - {x: 55.5, y: -187}
+        - {x: 52.5, y: -184}
+        - {x: 49.5, y: -184}
+      - - {x: -92.5, y: -67}
+        - {x: -163.5, y: -133}
+        - {x: -163.5, y: -150}
+        - {x: -136.5, y: -168}
+        - {x: 141.5, y: -168}
+        - {x: 163.5, y: -150}
+        - {x: 163.5, y: -77}
+        - {x: 157.5, y: -67}
     outline: []
   spritePackingTag: 
   userData: 
