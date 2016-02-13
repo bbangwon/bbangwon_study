@@ -99,8 +99,8 @@ public class GameManager : MonoBehaviour {
         Object prefab = Resources.Load("Monster");
 
         //참조한 프리팹을 인스턴스화합니다.(화면에 나타납니다.)
-        GameObject monster = Instantiate(prefab, mSpawnPoint[idx].position, Quaternion.identity) as GameObject;
-        //monster.transform.parent = mSpawnPoint[idx];
+        GameObject monster = Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
+        monster.transform.parent = mSpawnPoint[idx];
 
         //생성된 인스턴스에서 MonsterControl 컴포넌트를 불러내어 mMonster 리스트에 Add 시킵니다.
         mMonster.Add(monster.GetComponent<MonsterControl>());

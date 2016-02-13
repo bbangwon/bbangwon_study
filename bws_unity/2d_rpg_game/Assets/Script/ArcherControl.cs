@@ -40,6 +40,8 @@ public class ArcherControl : MonoBehaviour {
     [HideInInspector]
     public Status mStatus = Status.Idle;
 
+    public GameManager mGameManager;
+
 	// Use this for initialization
 	void Start () {
         mHp = mOrinHp;
@@ -53,7 +55,7 @@ public class ArcherControl : MonoBehaviour {
         mForegrounds = component[1];
 
         //자식(child) 게임오브젝트 중 spot이라는 이름의 오브젝트를 찾아 transform 컴포넌트의 레퍼런스를 반환합니다.
-        mAttackSpot = transform.FindChild("sopt");
+        mAttackSpot = transform.FindChild("spot");
 	}
 	
 	// Update is called once per frame
@@ -113,6 +115,10 @@ public class ArcherControl : MonoBehaviour {
         //화살 프리팹을 인스턴스화합니다.
         GameObject arrow = Instantiate(mArrowPrefab, mAttackSpot.position, Quaternion.identity) as GameObject;
         //화살 게임오브젝트의 컴포넌트에서 Shoot 함수를 호출합니다.
-        arrow.SendMessage("Shoot");
+        arrow.SendMessage("Shoot", mGameManager.TargetMonster);
+    }
+    public int GetRandomDamage()
+    {
+        return mAttack + Random.Range(0, 20);
     }
 }

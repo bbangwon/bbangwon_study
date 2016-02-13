@@ -30,10 +30,13 @@ public class MonsterControl : MonoBehaviour {
     [HideInInspector]
     public Status mStatus = Status.Alive;
 
+    private GameManager mGameManager;
+
 	// Use this for initialization
 	void Start () {
-	    //참조해야 할 객체나 스크립트들을 여기서 설정하게 될 것입니다.
-	}
+        //참조해야 할 객체나 스크립트들을 여기서 설정하게 될 것입니다.
+        mGameManager = GameObject.FindObjectOfType<GameManager>();
+    }
 
     //생성될 몬스터들은 현재 체력 +-10의 랜덤 체력을 가지게 됩니다.
     public void RandomHp()
@@ -50,6 +53,9 @@ public class MonsterControl : MonoBehaviour {
     //피격당할 경우 데미지 처리와 애니메이션 처리
     public void Hit()
     {
+        GameObject archer = GameObject.Find("Archer");
+        ArcherControl archercontrol = archer.GetComponent<ArcherControl>();
+        mHp -= archercontrol.GetRandomDamage();
         mAnimator.SetTrigger("Damage");
 
         //사망처리
@@ -59,6 +65,7 @@ public class MonsterControl : MonoBehaviour {
             mHp = 0;
             mCollider.enabled = false;
             mAnimator.SetTrigger("Die");
+            mGameManager.ReAutoTarget();
             Destroy(gameObject, 1f);
         }
     }
