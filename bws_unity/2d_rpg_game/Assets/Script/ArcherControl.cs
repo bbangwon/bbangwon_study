@@ -58,6 +58,7 @@ public class ArcherControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+/*
         //키보드의 좌, 우 화살표(혹은 A,D키)의 값을 가져옵니다.
         float speed = Mathf.Abs(Input.GetAxis("Horizontal"));
         SetStatus(Status.Run, speed);
@@ -76,7 +77,7 @@ public class ArcherControl : MonoBehaviour {
         {
             SetStatus(Status.Idle, 0);
         }
-	
+  */	
 	}
 
     //아쳐의 상태를 컨트롤합니다.
@@ -104,7 +105,7 @@ public class ArcherControl : MonoBehaviour {
             case Status.Dead:
                 mAnimator.SetTrigger("Die");
                 break;
-        }
+        }        
     }
 
     private void ShootArrow()
