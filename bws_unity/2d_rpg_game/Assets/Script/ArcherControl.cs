@@ -121,4 +121,19 @@ public class ArcherControl : MonoBehaviour {
     {
         return mAttack + Random.Range(0, 20);
     }
+
+    public void Hit(int damage)
+    {
+        //데미지를 누적시킵니다.
+        mHp -= damage;
+
+        if(mHp <= 0)
+        {
+            //사망처리
+            mStatus = Status.Dead;
+            mHp = 0;
+            mAnimator.SetTrigger("Die");
+            mGameManager.GameOver();
+        }
+    }
 }

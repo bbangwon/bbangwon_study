@@ -36,6 +36,7 @@ public class MonsterControl : MonoBehaviour {
 	void Start () {
         //참조해야 할 객체나 스크립트들을 여기서 설정하게 될 것입니다.
         mGameManager = GameObject.FindObjectOfType<GameManager>();
+        mFirePrefab = Resources.Load("FireBall") as GameObject;
     }
 
     //생성될 몬스터들은 현재 체력 +-10의 랜덤 체력을 가지게 됩니다.
@@ -74,6 +75,8 @@ public class MonsterControl : MonoBehaviour {
     private void ShootFire()
     {
         //파이어볼 프리팹을 씬에 인스턴스화하는 과정을 작성하게 됩니다.
+        GameObject fire = Instantiate(mFirePrefab, mFireShootSpot.position, Quaternion.identity) as GameObject;
+        fire.SendMessage("Shoot", this);
     }
 	
 	// Update is called once per frame

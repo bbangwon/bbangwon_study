@@ -21,7 +21,7 @@ public class ArrowControl : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         //몬스터 충돌체(collider)와 충돌 시 충돌정보가 전달됩니다.
-        if(other.name.Substring(0,7) == "Monster")
+        if(other.name.Length > 7 && other.name.Substring(0,7) == "Monster")
         {
             mCollider.enabled = false;
             mMonster.Hit();
