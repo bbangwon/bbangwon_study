@@ -61,6 +61,7 @@ public class MonsterControl : MonoBehaviour {
         ArcherControl archercontrol = archer.GetComponent<ArcherControl>();
 
         int damage;
+        archercontrol.isCritical();
         if (archercontrol.IsCritical)
         {
             damage = archercontrol.GetRandomDamage() * 2;
@@ -71,9 +72,10 @@ public class MonsterControl : MonoBehaviour {
         }
         mHp -= damage;
         mHpControl.Hit(damage);
+
+        HudText(damage, transform.position + new Vector3(0, .7f, 0), archercontrol.IsCritical);
+
         mAnimator.SetTrigger("Damage");
-
-
 
         //사망처리
         if(mHp <= 0)
@@ -95,8 +97,18 @@ public class MonsterControl : MonoBehaviour {
         fire.SendMessage("Shoot", this);
     }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    private void HudText(int damage, Vector3 pos, bool isCritical)
+    {
+        GameObject prefab = Resources.Load("HudText") as GameObject;
+        GameObject hudtext = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
+
+        if(isCritical)
+        {
+            hudtext.GetComponent<HudText>().SetHudText("Critical!!\n" + damage, new Color(255, 216, 0, 255), 35);
+        }
+        else
+        {
+            hudtext.GetComponent<HudText>().SetHudText(damage.ToString(), new Color(255, 255, 255, 255), 30);
+        }
+    }
 }

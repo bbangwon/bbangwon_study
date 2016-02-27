@@ -132,6 +132,7 @@ public class ArcherControl : MonoBehaviour {
     {
         //데미지를 누적시킵니다.
         mHp -= damage;
+        HudText(damage, transform.position + new Vector3(0, 3.1f, 0));
 
         mHpControl.Hit(damage);
         if(mHp <= 0)
@@ -150,5 +151,12 @@ public class ArcherControl : MonoBehaviour {
             IsCritical = true;
         else
             IsCritical = false;
+    }
+
+    private void HudText(int damage, Vector3 pos)
+    {
+        GameObject prefab = Resources.Load("HudText") as GameObject;
+        GameObject hudtext = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
+        hudtext.GetComponent<HudText>().SetHudText(damage.ToString(), new Color(255, 255, 255, 255), 28);
     }
 }
