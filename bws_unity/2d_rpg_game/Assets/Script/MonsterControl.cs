@@ -20,6 +20,8 @@ public class MonsterControl : MonoBehaviour {
     //몬스터가 사용할 파이어 볼 프리팹
     public GameObject mFirePrefab;
 
+    public HPControl mHpControl;
+
     //몬스터의 상태
     public enum Status
     {
@@ -37,6 +39,7 @@ public class MonsterControl : MonoBehaviour {
         //참조해야 할 객체나 스크립트들을 여기서 설정하게 될 것입니다.
         mGameManager = GameObject.FindObjectOfType<GameManager>();
         mFirePrefab = Resources.Load("FireBall") as GameObject;
+        mHpControl.SetHp(mHp);
     }
 
     //생성될 몬스터들은 현재 체력 +-10의 랜덤 체력을 가지게 됩니다.
@@ -56,8 +59,21 @@ public class MonsterControl : MonoBehaviour {
     {
         GameObject archer = GameObject.Find("Archer");
         ArcherControl archercontrol = archer.GetComponent<ArcherControl>();
-        mHp -= archercontrol.GetRandomDamage();
+
+        int damage;
+        if (archercontrol.IsCritical)
+        {
+            damage = archercontrol.GetRandomDamage() * 2;
+        }
+        else
+        {
+            damage = archercontrol.GetRandomDamage();
+        }
+        mHp -= damage;
+        mHpControl.Hit(damage);
         mAnimator.SetTrigger("Damage");
+
+
 
         //사망처리
         if(mHp <= 0)

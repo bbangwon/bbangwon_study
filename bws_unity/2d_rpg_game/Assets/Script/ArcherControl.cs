@@ -26,6 +26,9 @@ public class ArcherControl : MonoBehaviour {
 
     //화살의 프리팹을 참조합니다.
     public Object mArrowPrefab;
+    public HPControl mHpControl;
+    [HideInInspector]
+    public bool IsCritical = false;
 
     //Archer의 상태(대기, 달림, 공격, 사망)
     public enum Status
@@ -56,6 +59,7 @@ public class ArcherControl : MonoBehaviour {
 
         //자식(child) 게임오브젝트 중 spot이라는 이름의 오브젝트를 찾아 transform 컴포넌트의 레퍼런스를 반환합니다.
         mAttackSpot = transform.FindChild("spot");
+        mHpControl.SetHp(mHp);
 	}
 	
 	// Update is called once per frame
@@ -95,12 +99,14 @@ public class ArcherControl : MonoBehaviour {
                 break;
 
             case Status.Run:
+                mHpControl.Invisible();
                 mBackgrounds.FlowControl(1);
                 mForegrounds.FlowControl(1);
                 mAnimator.SetFloat("Speed", param);                
                 break;
 
             case Status.Attack:
+                mHpControl.gameObject.SetActive(true);
                 mAnimator.SetTrigger("Shoot");
                 break;
 
@@ -127,6 +133,7 @@ public class ArcherControl : MonoBehaviour {
         //데미지를 누적시킵니다.
         mHp -= damage;
 
+        mHpControl.Hit(damage);
         if(mHp <= 0)
         {
             //사망처리
@@ -135,5 +142,13 @@ public class ArcherControl : MonoBehaviour {
             mAnimator.SetTrigger("Die");
             mGameManager.GameOver();
         }
+    }
+    public void isCritical()
+    {
+        int random = Random.Range(0, 10);
+        if (random < 2)
+            IsCritical = true;
+        else
+            IsCritical = false;
     }
 }
