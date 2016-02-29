@@ -36,7 +36,8 @@ public class ArcherControl : MonoBehaviour {
         Idle,
         Run,
         Attack,
-        Dead
+        Dead,
+        Reborn
     }
 
     //public으로 선언되었지만 인스펙터 뷰(Inspector View)에 노출되지 않기를 원할 경우 HideInspector를 선언합니다.
@@ -113,6 +114,10 @@ public class ArcherControl : MonoBehaviour {
             case Status.Dead:
                 mAnimator.SetTrigger("Die");
                 break;
+
+            case Status.Reborn:
+                mAnimator.SetTrigger("Reborn");
+                break;
         }        
     }
 
@@ -158,5 +163,27 @@ public class ArcherControl : MonoBehaviour {
         GameObject prefab = Resources.Load("HudText") as GameObject;
         GameObject hudtext = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
         hudtext.GetComponent<HudText>().SetHudText(damage.ToString(), new Color(255, 255, 255, 255), 28);
+    }
+
+    public void SetLeveling(int lv)
+    {
+        //레벨이 증가할 때마다 공격력을 증가시킵니다.
+        int attack = 0;
+        for(int i=1;i< lv;++i)
+        {
+            attack += i * 5;
+        }
+
+        mAttack = mOrinAttack + attack;
+    }
+
+    //아처를 부활시키기 위해 초기화
+    public void Reborn()
+    {
+        mStatus = Status.Idle;
+        mHp = mOrinHp;
+        mHpControl.SetHp(mHp);
+        mHpControl.Invisible();
+        SetStatus(Status.Reborn, 0);
     }
 }
