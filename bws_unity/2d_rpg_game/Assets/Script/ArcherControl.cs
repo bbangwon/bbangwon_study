@@ -45,6 +45,7 @@ public class ArcherControl : MonoBehaviour {
     public Status mStatus = Status.Idle;
 
     public GameManager mGameManager;
+    public ParticleSystem mSmoke;
 
 	// Use this for initialization
 	void Start () {
@@ -94,12 +95,16 @@ public class ArcherControl : MonoBehaviour {
         switch(status)
         {
             case Status.Idle:
+                //파티클 방사를 중지합니다.
+                mSmoke.Stop();
                 mAnimator.SetFloat("Speed", 0);
                 mBackgrounds.FlowControl(0);
                 mForegrounds.FlowControl(0);
                 break;
 
             case Status.Run:
+                //파티클 오브젝트를 활성화합니다.
+                mSmoke.gameObject.SetActive(true);
                 mHpControl.Invisible();
                 mBackgrounds.FlowControl(1);
                 mForegrounds.FlowControl(1);
