@@ -126,25 +126,48 @@ public class ArcherControl : MonoBehaviour {
         }        
     }
 
+    //Resources폴더로부터 경로(path)에 있는 프리팹을 로드한 후 해당 포지션(pos)에 인스턴스화(Instantiate)시키고
+    // _parent 게임오브젝트에 자식으로 추가합니다.
+    private GameObject MakeEffect(string path, Vector3 pos, Transform _parent)
+    {
+        GameObject prefab = Resources.Load(path) as GameObject;
+        GameObject eff = Instantiate(prefab) as GameObject;
+        eff.transform.position = pos;
+        eff.transform.parent = _parent;
+        return eff;
+    }
+
     private void ShootArrow()
     {
+        MakeEffect("Eff_BowLight", mAttackSpot.position + new Vector3(0.75f, 0, 0), transform);
         //화살 프리팹을 인스턴스화합니다.
         GameObject arrow = Instantiate(mArrowPrefab, mAttackSpot.position, Quaternion.identity) as GameObject;
         //화살 게임오브젝트의 컴포넌트에서 Shoot 함수를 호출합니다.
         arrow.SendMessage("Shoot", mGameManager.TargetMonster);
+        //크리티컬 상태인지 확인합니다.
+        isCritical();
+        if(IsCritical)
+        {
+            //Eff_CriticalFire 프리팹을 로드 후 arrow의 자식으로 위치시킵니다.
+            GameObject fire = MakeEffect("Eff_CriticalFire", mAttackSpot.position + new Vector3(0.75f, 0, 0), arrow.transform);
+            //fire프리팹은 비활성화 상태로 프리팹화되었으므로 활성화시켜줍니다.
+            fire.SetActive(true);
+        }
     }
     public int GetRandomDamage()
     {
         return mAttack + Random.Range(0, 20);
     }
 
-    public void Hit(int damage)
+    public void Hit(ArrayList param)
     {
+        int damage = (int)param[0];
         //데미지를 누적시킵니다.
         mHp -= damage;
         HudText(damage, transform.position + new Vector3(0, 3.1f, 0));
 
         mHpControl.Hit(damage);
+        MakeEffect("Eff_Hit_Archer", (Vector3)param[1], transform);
         if(mHp <= 0)
         {
             //사망처리

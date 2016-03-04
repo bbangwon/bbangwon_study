@@ -24,7 +24,10 @@ public class FireControl : MonoBehaviour {
         {
             int damage = mMonster.mAttack;
             //mArcher 게임오브젝트에 있는 모든 컴포넌트에 있는 함수 중 Hit 함수 호출
-            mArcher.SendMessage("Hit", damage);
+            ArrayList param = new ArrayList();
+            param.Add(damage);
+            param.Add(transform.position);
+            mArcher.SendMessage("Hit", param);
             Destroy(gameObject, 0.07f);
         }
     }
