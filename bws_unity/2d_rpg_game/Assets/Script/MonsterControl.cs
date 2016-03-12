@@ -74,6 +74,7 @@ public class MonsterControl : MonoBehaviour {
         mHpControl.Hit(damage);
 
         MakeEffect("Eff_Hit", hitPos + new Vector3(0.4f, 0.2f, 0), transform);
+        MakeEffect("Sound_Hit", Vector3.zero, transform);
 
         HudText(damage, transform.position + new Vector3(0, .7f, 0), archercontrol.IsCritical);
 
@@ -110,6 +111,7 @@ public class MonsterControl : MonoBehaviour {
         //파이어볼 프리팹을 씬에 인스턴스화하는 과정을 작성하게 됩니다.
         GameObject fire = Instantiate(mFirePrefab, mFireShootSpot.position, Quaternion.identity) as GameObject;
         fire.SendMessage("Shoot", this);
+        MakeEffect("Sound_Fireball", Vector3.zero, transform); 
     }
 	
     private void HudText(int damage, Vector3 pos, bool isCritical)

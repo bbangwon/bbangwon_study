@@ -152,6 +152,11 @@ public class ArcherControl : MonoBehaviour {
             GameObject fire = MakeEffect("Eff_CriticalFire", mAttackSpot.position + new Vector3(0.75f, 0, 0), arrow.transform);
             //fire프리팹은 비활성화 상태로 프리팹화되었으므로 활성화시켜줍니다.
             fire.SetActive(true);
+            MakeEffect("Sound_Critical", Vector3.zero, transform);
+        }
+        else
+        {
+            MakeEffect("Sound_Arrow", Vector3.zero, transform);
         }
     }
     public int GetRandomDamage()
@@ -168,6 +173,7 @@ public class ArcherControl : MonoBehaviour {
 
         mHpControl.Hit(damage);
         MakeEffect("Eff_Hit_Archer", (Vector3)param[1], transform);
+        MakeEffect("Sound_Hit", Vector3.zero, transform);
         if(mHp <= 0)
         {
             //사망처리
