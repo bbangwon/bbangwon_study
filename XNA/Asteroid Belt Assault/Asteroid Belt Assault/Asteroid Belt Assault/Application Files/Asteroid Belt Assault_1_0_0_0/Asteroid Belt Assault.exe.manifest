@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Asteroid Belt Assault.exe" version="1.0.0.0" publicKeyToken="de03827d911408da" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Asteroid Belt Assault" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Asteroid Belt Assault.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 대체하십시오.
+
+        <requestedExecutionLevel  level="asInvoker" />
+        <requestedExecutionLevel  level="requireAdministrator" />
+        <requestedExecutionLevel  level="highestAvailable" />
+
+        이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하십시오.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Asteroid Belt Assault.exe" size="29696">
+      <assemblyIdentity name="Asteroid Belt Assault" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>nRWCmAHwiweSOAovBQHp+IXvVCc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Content\Fonts\Pericles14.xnb" size="5908">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hc+RTQG0NIyyCUT8D2mHBQcwd6k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sounds\Explosion1.xnb" size="61201">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>inmIra4/BxGcwliVppg6QP1Vw9o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sounds\Explosion2.xnb" size="65513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lx+PNoQfJuPp1WzkHe27OrIVT9Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sounds\Explosion3.xnb" size="64365">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>D9cxwhpi/nTMO0NeiiSudiLB+VQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sounds\Explosion4.xnb" size="34985">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>86/dvZeXqSAEgBjZlRd5PwvgZGw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sounds\Shot1.xnb" size="19403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hH6PazZPbi5asBfDL28n69fqAjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sounds\Shot2.xnb" size="16221">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>o+vQiF5mE/nSG78QIB7IfWXmx0w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Textures\SpriteSheet.xnb" size="63354">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>e4REnxkL/QKEepwO03FnNXrDAV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Textures\TitleScreen.xnb" size="525382">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LKItZeXIILUcvMKPYtaOakK2jJU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Game.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/y21PfwGnUAkwpPwwaFuIIyWENo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GameThumbnail.png" size="5734">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>diNvdcDpDtGEMuMQIHpkKK3qVHc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=YOUNGIL_CHUNG\user" issuerKeyHash="a4b9fe59c25ad3bbed3bbdc60958527699e08dba" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Cw8QkSHsQwjOp9d7WzZWrS/Wr8A=</DigestValue></Reference></SignedInfo><SignatureValue>yVbuDpFoUOFtwgtNZrP+91c0sHDHTq6rMUv3vHPdPPAkTpkSE6CILrcSjOB5HDpUlSbYPWYABEAsf6NMBnaywC0jT+SxBM9mRhBFny74UYUqqif1ZjffYo4nNSj/5ymx2eAk8LgDtWGWhq17geK7wJwe4FkmZBgst0sGuB+MV7c=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>14eFflMWdIbjArK7PVVzRPO15euZrSo/xJHj6SFDA6fz71xsXCP0imDhZXuCxOd0KSlK8ZISFPsW9eclfctMP5UG79SoJjDtCHpQoj2ZK6rqzbgpyH/9j/UIjVItcfoTkrQe5OLBsIqmKDsJtcI3LEk/oMhuYk5l7E7ocJJoWC8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c0afd62fad56365b7bd7a7ce0843ec2191100f0b" Description="" Url=""><as:assemblyIdentity name="Asteroid Belt Assault.exe" version="1.0.0.0" publicKeyToken="de03827d911408da" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=YOUNGIL_CHUNG\user</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>vF8GZaMjewfwLMbrFusM0uKxL9M=</DigestValue></Reference></SignedInfo><SignatureValue>aKUwM29YHDQXmkcfalAOjU4qdktAEg2Y4YGPkqJKufH7dpFi1lO32YLAsQCnrDi25wS/jWeYNPaywbkOj+6tvN0qdoy+V3h7GRZyZPjVMx9O8X8bpSVFCee8C3ydc//2E+6Ak1aQ+3jsh5rt5Hr96NMKHbyTUMZBhOYofCUg5Ko=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>14eFflMWdIbjArK7PVVzRPO15euZrSo/xJHj6SFDA6fz71xsXCP0imDhZXuCxOd0KSlK8ZISFPsW9eclfctMP5UG79SoJjDtCHpQoj2ZK6rqzbgpyH/9j/UIjVItcfoTkrQe5OLBsIqmKDsJtcI3LEk/oMhuYk5l7E7ocJJoWC8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUagAwIBAgIQRwbzjMl2zq5C4GNcPgEjezAJBgUrDgMCHQUAMC8xLTArBgNVBAMeJABZAE8AVQBOAEcASQBMAF8AQwBIAFUATgBHAFwAdQBzAGUAcjAeFw0xMjA3MTMwMzU0MjRaFw0xMzA3MTMwOTU0MjRaMC8xLTArBgNVBAMeJABZAE8AVQBOAEcASQBMAF8AQwBIAFUATgBHAFwAdQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA14eFflMWdIbjArK7PVVzRPO15euZrSo/xJHj6SFDA6fz71xsXCP0imDhZXuCxOd0KSlK8ZISFPsW9eclfctMP5UG79SoJjDtCHpQoj2ZK6rqzbgpyH/9j/UIjVItcfoTkrQe5OLBsIqmKDsJtcI3LEk/oMhuYk5l7E7ocJJoWC8CAwEAATAJBgUrDgMCHQUAA4GBAJJAH7TK1hDosEPHJiInygDfoNhJ1Tr1dZQmQ38A46oJoXiCHoFHFNhuh0h6Z4KBz7zsqBhbIBpNtbM4ifYsjG7x3+TUWDHyJHSmX82GgiI+jkeXnuYayxJwv1sD/O+5fE8dGPpMrEPZVM66TbpImP2SBiTCTU4X7eElRKc8zviU</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

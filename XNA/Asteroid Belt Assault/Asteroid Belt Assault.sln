@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asteroid Belt Assault", "Asteroid Belt Assault\Asteroid Belt Assault.csproj", "{CBF8DFDF-13AE-4CA5-8E11-85505FC71AC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF8DFDF-13AE-4CA5-8E11-85505FC71AC3}.Debug|x86.ActiveCfg = Debug|x86
+		{CBF8DFDF-13AE-4CA5-8E11-85505FC71AC3}.Debug|x86.Build.0 = Debug|x86
+		{CBF8DFDF-13AE-4CA5-8E11-85505FC71AC3}.Release|x86.ActiveCfg = Release|x86
+		{CBF8DFDF-13AE-4CA5-8E11-85505FC71AC3}.Release|x86.Build.0 = Release|x86
+		{490A14DC-4309-4B2C-8080-DA69826C0CB1}.Debug|x86.ActiveCfg = Debug|x86
+		{490A14DC-4309-4B2C-8080-DA69826C0CB1}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

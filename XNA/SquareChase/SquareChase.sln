@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareChase", "SquareChase\SquareChase.csproj", "{A8382A56-339E-4B62-91E3-14D357A3043E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8382A56-339E-4B62-91E3-14D357A3043E}.Debug|x86.ActiveCfg = Debug|x86
+		{A8382A56-339E-4B62-91E3-14D357A3043E}.Debug|x86.Build.0 = Debug|x86
+		{A8382A56-339E-4B62-91E3-14D357A3043E}.Release|x86.ActiveCfg = Release|x86
+		{A8382A56-339E-4B62-91E3-14D357A3043E}.Release|x86.Build.0 = Release|x86
+		{31988C29-D22C-4A39-BD3E-B819EFF40632}.Debug|x86.ActiveCfg = Debug|x86
+		{31988C29-D22C-4A39-BD3E-B819EFF40632}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
