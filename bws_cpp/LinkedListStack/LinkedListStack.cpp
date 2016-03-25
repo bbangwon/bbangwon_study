@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "LinkedListStack.h"
+#include "Calculator.h"
 
 void LLS_CreateStack(LinkedListStack** Stack)
 {
@@ -107,40 +108,21 @@ int LLS_IsEmpty(LinkedListStack * Stack)
 
 int main()
 {
-	int i = 0;
-	int Count = 0;
-	Node* Popped;
+	char InfixExpression[100];
+	char PostfixExpression[100];
 
-	LinkedListStack* Stack;
-	LLS_CreateStack(&Stack);
+	double Result = 0.0;
+	memset(InfixExpression, 0, sizeof(InfixExpression));
+	memset(PostfixExpression, 0, sizeof(PostfixExpression));
 
-	LLS_Push(Stack, LLS_CreateNode("abc"));
-	LLS_Push(Stack, LLS_CreateNode("def"));
-	LLS_Push(Stack, LLS_CreateNode("efg"));
-	LLS_Push(Stack, LLS_CreateNode("hij"));
+	printf("Enter Infix Expression:");
+	scanf_s("%s", InfixExpression, sizeof(InfixExpression));
 
-	Count = LLS_GetSize(Stack);
-	printf("Size: %d, Top: %s\n\n", Count, LLS_Top(Stack)->Data);
+	GetPostfix(InfixExpression, PostfixExpression);
 
-	for (i = 0; i < Count; i++)
-	{
-		if (LLS_IsEmpty(Stack))
-			break;
-
-		Popped = LLS_Pop(Stack);
-		printf("Popped : %s, ", Popped->Data);
-		LLS_DestroyNode(Popped);
-
-		if (!LLS_IsEmpty(Stack))
-		{
-			printf("Current Top : %s\n", LLS_Top(Stack)->Data);
-		}
-		else
-		{
-			printf("Stack Is Empty.\n");
-		}
-	}
-	LLS_DestroyStack(Stack);
+	printf("Infix:%s\nPostfix:%s\n", InfixExpression, PostfixExpression);
+	Result = Calculate(PostfixExpression);
+	printf("Calculation Result : %f\n", Result);
     return 0;
 }
 
