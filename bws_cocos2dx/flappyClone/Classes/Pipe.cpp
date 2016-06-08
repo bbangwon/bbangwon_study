@@ -38,9 +38,15 @@ void Pipe::SpawnPipe(cocos2d::Layer * layer)
 	topPipe->setPhysicsBody(topPipeBody);
 	bottomPipe->setPhysicsBody(bottomPipeBody);
 
-	topPipe->setPosition(Vec2(visibleSize.width / 2 + topPipe->getContentSize().width + origin.x + CCRANDOM_MINUS1_1() * 250, topPipePosition));
+	topPipe->setPosition(Vec2(visibleSize.width + topPipe->getContentSize().width + origin.x, topPipePosition));
 	bottomPipe->setPosition(Vec2(topPipe->getPositionX(), topPipePosition - (Sprite::create("Ball.png")->getContentSize().height * PIPE_GAP) - topPipe->getContentSize().height));
 
 	layer->addChild(topPipe);
 	layer->addChild(bottomPipe);
+
+	auto topPipeAction = MoveBy::create(PIPE_MOVEMENT_SPEED * visibleSize.width, Vec2(-visibleSize.width * 1.5, 0));
+	auto bottomPipeAction = MoveBy::create(PIPE_MOVEMENT_SPEED * visibleSize.width, Vec2(-visibleSize.width * 1.5, 0));
+
+	topPipe->runAction(topPipeAction);
+	bottomPipe->runAction(bottomPipeAction);
 }
