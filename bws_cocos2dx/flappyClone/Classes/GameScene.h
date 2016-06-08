@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "pipe.h"
+#include "Bird.h"
 
 class GameScene : public cocos2d::Layer
 {
@@ -20,6 +21,7 @@ private:
 	void SpawnPipe(float dt);
 	cocos2d::PhysicsWorld *sceneWorld;
 	Pipe pipe;
+	Bird *bird;
 };
 
 #endif // __GAME_SCENE_H__
