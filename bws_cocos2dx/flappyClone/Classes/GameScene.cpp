@@ -9,6 +9,7 @@ Scene* GameScene::createScene()
     // 'scene' is an autorelease object
     auto scene = Scene::createWithPhysics();
 	scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+	scene->getPhysicsWorld()->setGravity(Vect(0, 0));
     
     // 'layer' is an autorelease object
     auto layer = GameScene::create();
@@ -57,6 +58,13 @@ bool GameScene::init()
 	contactListener->onContactBegin = CC_CALLBACK_1(GameScene::onContactBegin, this);
 	Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
 
+	auto touchListener = EventListenerTouchOneByOne::create();
+	touchListener->setSwallowTouches(true);
+	touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
+	Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
+
+	this->scheduleUpdate();
+
     return true;
 }
 
@@ -78,6 +86,24 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact & contact)
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene ));
 	}
 	return true;
+}
+
+bool GameScene::onTouchBegan(cocos2d::Touch * touch, cocos2d::Event * event)
+{
+	bird->Fly();
+
+	this->scheduleOnce(schedule_selector(GameScene::StopFlying), BIRD_FLY_DURATION);
+	return true;
+}
+
+void GameScene::StopFlying(float dt)
+{
+	bird->StopFlying();
+}
+
+void GameScene::update(float dt)
+{
+	bird->Fall();
 }
 
 
