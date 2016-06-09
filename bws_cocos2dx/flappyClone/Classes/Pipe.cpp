@@ -35,6 +35,12 @@ void Pipe::SpawnPipe(cocos2d::Layer * layer)
 	topPipeBody->setDynamic(false);
 	bottomPipeBody->setDynamic(false);
 
+	topPipeBody->setCollisionBitmask(OBSTACLE_COLLISION_BITMASK);
+	bottomPipeBody->setCollisionBitmask(OBSTACLE_COLLISION_BITMASK);
+
+	topPipeBody->setContactTestBitmask(true);
+	bottomPipeBody->setContactTestBitmask(true);
+
 	topPipe->setPhysicsBody(topPipeBody);
 	bottomPipe->setPhysicsBody(bottomPipeBody);
 

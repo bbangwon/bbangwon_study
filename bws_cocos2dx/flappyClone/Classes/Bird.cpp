@@ -12,6 +12,10 @@ Bird::Bird(cocos2d::Layer *layer)
 	flappyBird->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 
 	auto flappyBody = PhysicsBody::createCircle(flappyBird->getContentSize().width / 2);
+
+	flappyBody->setCollisionBitmask(BIRD_COLLISION_BITMASK);
+	flappyBody->setContactTestBitmask(true);
+
 	flappyBird->setPhysicsBody(flappyBody);
 
 	layer->addChild(flappyBird, 100);
