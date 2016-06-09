@@ -63,6 +63,8 @@ bool GameScene::init()
 	touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
 	Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
 
+	score = 0;
+
 	this->scheduleUpdate();
 
     return true;
@@ -82,8 +84,16 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact & contact)
 	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) ||
 		(BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()))
 	{
+
+		CCLOG("SCORE : %i", score);
 		auto scene = GameOverScene::createScene();
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene ));
+	}
+	else if((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) ||
+		(BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
+	{
+		CCLOG("Point scored");
+		score++;
 	}
 	return true;
 }

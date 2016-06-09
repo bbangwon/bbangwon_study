@@ -28,6 +28,8 @@ private:
 	cocos2d::PhysicsWorld *sceneWorld;
 	Pipe pipe;
 	Bird *bird;
+
+	unsigned int score;
 };
 
 #endif // __GAME_SCENE_H__
