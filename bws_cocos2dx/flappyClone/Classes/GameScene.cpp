@@ -95,6 +95,7 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact & contact)
 		CCLOG("Point scored");
 		score++;
 	}
+	
 	return true;
 }
 
