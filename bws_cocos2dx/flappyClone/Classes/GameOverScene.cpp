@@ -5,8 +5,11 @@
 
 USING_NS_CC;
 
-Scene* GameOverScene::createScene()
+unsigned int score;
+
+Scene* GameOverScene::createScene(unsigned int tempScore)
 {
+	score = tempScore;
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
@@ -48,6 +51,13 @@ bool GameOverScene::init()
 	menu->setPosition(Vec2::ZERO);
 
 	this->addChild(menu);
+
+	__String *tempScore = __String::createWithFormat("%i", score);
+
+	auto currentScore = Label::createWithTTF(tempScore->getCString(), "fonts/Marker Felt.ttf", visibleSize.height * SCORE_FONT_SIZE);
+	currentScore->setPosition(Vec2(visibleSize.width * 0.25 + origin.x, visibleSize.height / 2 + origin.y));
+
+	this->addChild(currentScore);
 
     return true;
 }
