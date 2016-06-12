@@ -30,6 +30,8 @@ private:
 	Bird *bird;
 
 	unsigned int score;
+
+	cocos2d::Label *scoreLabel;
 };
 
 #endif // __GAME_SCENE_H__

@@ -64,6 +64,13 @@ bool GameScene::init()
 	Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
 
 	score = 0;
+	
+	__String *tempScore = __String::createWithFormat("%i", score);
+	scoreLabel = Label::createWithTTF(tempScore->getCString(), "fonts/Marker Felt.ttf", visibleSize.height * SCORE_FONT_SIZE);
+	scoreLabel->setColor(Color3B::WHITE);
+	scoreLabel->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height * 0.75 + origin.y));
+
+	this->addChild(scoreLabel, 10000);
 
 	this->scheduleUpdate();
 
@@ -84,16 +91,15 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact & contact)
 	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) ||
 		(BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()))
 	{
-
-		CCLOG("SCORE : %i", score);
 		auto scene = GameOverScene::createScene();
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene ));
 	}
 	else if((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) ||
 		(BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
 	{
-		CCLOG("Point scored");
 		score++;
+		__String *tempScore = __String::createWithFormat("%i", score);
+		scoreLabel->setString(tempScore->getCString());
 	}
 	
 	return true;
