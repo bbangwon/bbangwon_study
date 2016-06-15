@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "SplashScene.h"
+#include "AudioEngine.h"
 
 USING_NS_CC;
 
@@ -14,6 +15,7 @@ AppDelegate::AppDelegate() {
 
 AppDelegate::~AppDelegate() 
 {
+	cocos2d::experimental::AudioEngine::end();
 }
 
 //if you want a different context,just modify the value of glContextAttrs

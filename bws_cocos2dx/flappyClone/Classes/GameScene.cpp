@@ -1,6 +1,7 @@
 #include "GameScene.h"
 #include "Definitions.h"
 #include "GameOverScene.h"
+#include "AudioEngine.h"
 
 USING_NS_CC;
 
@@ -91,12 +92,15 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact & contact)
 	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) ||
 		(BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()))
 	{
+		cocos2d::experimental::AudioEngine::play2d("Sounds/Hit.mp3");
 		auto scene = GameOverScene::createScene(score);
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene ));
 	}
 	else if((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) ||
 		(BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
 	{
+		cocos2d::experimental::AudioEngine::play2d("Sounds/Point.mp3");
+
 		score++;
 		__String *tempScore = __String::createWithFormat("%i", score);
 		scoreLabel->setString(tempScore->getCString());

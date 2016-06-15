@@ -1,6 +1,7 @@
 #include "SplashScene.h"
 #include "MainMenuScene.h"
 #include "Definitions.h"
+#include "AudioEngine.h"
 
 USING_NS_CC;
 
@@ -27,8 +28,13 @@ bool SplashScene::init()
     if ( !Layer::init() )
     {
         return false;
-    }
-    
+    } 
+
+	cocos2d::experimental::AudioEngine::preload("Sounds/Hit.mp3");
+	cocos2d::experimental::AudioEngine::preload("Sounds/Point.mp3");
+	cocos2d::experimental::AudioEngine::preload("Sounds/Wing.mp3");
+
+	    
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
